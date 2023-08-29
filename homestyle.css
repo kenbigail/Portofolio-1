@@ -651,6 +651,12 @@ li a:hover {
 
 @media screen and (max-width: 768px) {
 
+    /* hello */
+    .span-hello {
+        font-size: 2rem;
+    }
+    /* hello */
+
     /* Hero */
     .image img {
         width: 250px;
