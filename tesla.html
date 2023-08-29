@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            background: black;
+        }
+
+        .navbar {
+            width: 100vw;
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar_logo {
+            width: 34%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar_btn {
+            width: 45%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            display: inline;
+            margin: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: 200;
+            color: rgb(255, 255, 255);
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: rgba(255, 255, 255, 0.756);
+        }
+
+        .home {
+            font-weight: 600;
+        }
+
+        .logo {
+            opacity: 1;
+            transition: opacity 0.2s ease;
+            margin-top: 10px;
+        }
+
+        .logo:hover {
+            opacity: 0.5;
+        }
+
+        .hero {
+            height: 95vh;
+            width: 100vw;
+            background: rgba(0, 0, 0, 0.223);
+        }
+
+        .hero1_inside {
+            height: 100%;
+            width: 100%;
+            display: flex;
+        }
+
+        .area_pp {
+            width: 45%;
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pp {
+            margin-right: 185px;
+        }
+
+        .area_title {
+            width: 30%;
+            height: 35.4%;
+            padding: 270px;
+            padding-top: 155px;
+        }
+
+        .tv_title {
+            color: white;
+            text-shadow: 0px 0px 10px #ffffff00;
+            font-family: 'Big Shoulders Display';
+            font-size: 200px;
+            letter-spacing: -6px;
+            word-spacing: 0px;
+            transition: letter-spacing 0.3s ease, word-spacing 0.3s ease, text-shadow 0.4s ease;
+        }
+
+        .tv_title:hover {
+            letter-spacing: 4px;
+            word-spacing: 10px;
+            text-shadow: 0px 0px 100px #ffffff;
+        }
+
+        .tv_title_2 {
+            color: white;
+            -webkit-text-stroke: 2px rgba(255, 255, 255, 0);
+            margin-top: -50px;
+            text-shadow: 0px 0px 10px #ffffff00;
+            font-family: 'Big Shoulders Display';
+            font-size: 93px;
+            letter-spacing: -4px;
+            word-spacing: 0px;
+            transition: letter-spacing 0.3s ease, word-spacing 0.3s ease, text-shadow 0.4s ease, -webkit-text-stroke 0.3s ease, color 0.19s ease;
+        }
+
+        .tv_title_2:hover {
+            color: rgba(255, 255, 255, 0);
+            -webkit-text-stroke: 1px white;
+            letter-spacing: -1px;
+            word-spacing: 10px;
+            text-shadow: 0px 0px 100px #ffffff;
+        }
+
+        .tv_tagline {
+            color: white;
+        }
+
+        .btn_portofolio {
+            font-weight: 600;
+            color: white;
+            box-shadow: 0px 0px 50px rgba(255, 255, 255, 0);
+            padding: 15px 30px;
+            margin-left: 20px;
+            font-size: 20px;
+            border: 1px solid;
+            margin-top: 25px;
+            background: rgba(255, 255, 255, 0);
+            transition: background 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn_portofolio:hover {
+            color: black;
+            background: white;
+            box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.371);
+        }
+
+        .btn_me {
+            font-weight: 600;
+            color: white;
+            box-shadow: 0px 0px 50px rgba(255, 255, 255, 0);
+            padding: 15px 25px;
+            font-size: 20px;
+            border: 1px solid;
+            background: black;
+            margin-top: 25px;
+            transition: background 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn_me:hover {
+            color: black;
+            background: white;
+            box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.371);
+        }
+
+        .tv_pp {
+            font-family: 'Big Shoulders Display';
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0);
+            font-size: 150px;
+            color: rgba(255, 255, 255, 0);
+            margin-top: -150px;
+            margin-left: 0px;
+            transition: color 0.3s ease, margin-left 0.3s ease, text-shadow 0.3s ease, -webkit-text-stroke 0.3s ease;
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0);
+        }
+
+        .tv_pp:hover {
+            -webkit-text-stroke: 3px white;
+            margin-left: 140px;
+            text-shadow: 0px 0px 30px #ffffff95;
+        }
+
+        .ppnya {
+            width: 700px;
+            transition: width 0.4s ease;
+        }
+
+        .ppnya:hover {
+            width: 750px;
+        }
+
+        .hero2 {
+            height: 103vh;
+            width: 100%;
+            padding-bottom: 40px;
+            background: white;
+        }
+
+        .tv_skills {
+            color: black;
+            font-family: 'Big Shoulders Display';
+            font-size: 150px;
+            letter-spacing: -5px;
+            transition: letter-spacing 0.2s ease;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+
+        .tv_skills:hover {
+            letter-spacing: 0px;
+        }
+
+        .skills_div {
+            height: 80.5%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .div_gd {
+            height: 90%;
+            width: 400px;
+            border: 3px solid;
+            border-radius: 5px;
+            padding: 15px 0px;
+        }
+
+        .div_design {
+            height: 10%;
+            width: 100%;
+        }
+
+        .title_gd {
+            text-align: center;
+        }
+
+        .div_figma {
+            height: 50%;
+            width: 50%;
+        }
+
+        .div_item_skills_design {
+            height: 90%;
+            width: 70%;
+            margin: 25px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 60px;
+        }
+
+        .figma {
+            height: 87%;
+            width: 78px;
+            padding: 20px;
+            background: beige;
+        }
+
+        .persen_figma {
+            background: rgba(0, 0, 0, 0.564);
+            height: 5%;
+            width: 80px;
+            transition: height 0.3s ease, background 0.3s ease;
+        }
+
+        .persen_figma:hover {
+            height: 55.5%;
+            background: black;
+        }
+
+        .ai {
+            height: 87%;
+            width: 78px;
+            padding: 20px;
+            background: beige;
+        }
+
+        .persen_ai {
+            background: rgba(0, 0, 0, 0.564);
+            height: 5%;
+            width: 80px;
+            transition: height 0.3s ease, background 0.3s ease;
+        }
+
+        .persen_ai:hover {
+            height: 33.6%;
+            background: black;
+        }
+
+        .levels_dsgn {
+            height: 400px;
+            position: absolute;
+            left: 15px;
+            top: 1499px;
+        }
+
+        .levels_video {
+            height: 400px;
+            position: absolute;
+            left: 990px;
+            top: 1468px;
+        }
+
+        .hero2_inside {
+            height: 100%;
+            width: 100%;
+            display: flex;
+        }
+
+        .skills_div_video_editing {
+            height: 80.5%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .pr {
+            height: 87%;
+            width: 78px;
+            padding: 20px;
+            background: beige;
+        }
+
+        .persen_pr {
+            background: rgba(0, 0, 0, 0.564);
+            height: 5%;
+            width: 80px;
+            transition: height 0.3s ease, background 0.3s ease;
+        }
+
+        .persen_pr:hover {
+            height: 33.5%;
+            background: black;
+        }
+
+        .ae {
+            height: 87%;
+            width: 78px;
+            padding: 20px;
+            background: beige;
+        }
+
+        .persen_ae {
+            background: rgba(0, 0, 0, 0.564);
+            height: 5%;
+            width: 80px;
+            transition: height 0.3s ease, background 0.3s ease;
+        }
+
+        .persen_ae:hover {
+            height: 12%;
+            background: black;
+        }
+
+        .div_cd {
+            height: 90%;
+            width: 500px;
+            border: 3px solid;
+            border-radius: 5px;
+            padding: 15px 0px;
+        }
+
+        .div_code {
+            height: 10%;
+            width: 100%;
+        }
+
+        .div_item_skills_code {
+            height: 90%;
+            width: 82%;
+            margin: 25px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 45px;
+        }
+
+        .html {
+            height: 87%;
+            width: 78px;
+            padding: 20px;
+            background: beige;
+        }
+
+        .persen_html {
+            background: rgba(0, 0, 0, 0.564);
+            height: 5%;
+            width: 80px;
+            transition: height 0.3s ease, background 0.3s ease;
+        }
+
+        .persen_html:hover {
+            height: 80%;
+            background: black;
+        }
+
+        .css {
+            height: 87%;
+            width: 78px;
+            padding: 20px;
+            background: beige;
+        }
+
+        .persen_css {
+            background: rgba(0, 0, 0, 0.564);
+            height: 5%;
+            width: 80px;
+            transition: height 0.3s ease, background 0.3s ease;
+        }
+
+        .persen_css:hover {
+            height: 80%;
+            background: black;
+        }
+
+        .kotlin {
+            height: 87%;
+            width: 78px;
+            padding: 20px;
+            background: beige;
+        }
+
+        .persen_kotlin {
+            background: rgba(0, 0, 0, 0.564);
+            height: 5%;
+            width: 80px;
+            transition: height 0.3s ease, background 0.3s ease;
+        }
+
+        .persen_kotlin:hover {
+            height: 80%;
+            background: black;
+        }
+
+        .hero3 {
+            height: 100vh;
+            width: 100%;
+        }
+
+        .title_project {
+            font-family: 'Big Shoulders Display';
+            font-size: 180px;
+            text-align: center;
+            padding-top: 30px;
+            color: white;
+            letter-spacing: -4px;
+            transition: letter-spacing 0.3s ease;
+        }
+
+        .title_project:hover {
+            letter-spacing: 0px;
+        }
+
+        .panel_project {
+            height: 100%;
+            width: 100%;
+        }
+
+        .div_project {
+            height: 40%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container_project {
+            height: 100%;
+            width: 27%;
+            margin: 20px;
+        }
+
+        .project {
+            height: 75%;
+            width: 100%;
+        }
+
+        .project_name {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .tv_name_project {
+            font-family: 'Big Shoulders Display';
+            font-size: 50px;
+            color: white;
+        }
+
+        .img_project {
+            box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.409);
+            transition: box-shadow 0.2s ease;
+        }
+
+        .img_project:hover {
+            box-shadow: 0px 0px 90px rgba(255, 255, 255, 0.578);
+        }
+
+        .gradient {
+            height: 30%;
+            width: 100%;
+            background: linear-gradient(to bottom, #ffffff, rgb(79, 79, 79), #000000);
+        }
+
+        .container_sosmed {
+            height: 170px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: -140px;
+        }
+
+        .panel_logo_sosmed {
+            padding: 10px;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+
+        .panel_logo_sosmed:hover {
+            opacity: 0.6;
+        }
+
+        .big_img {
+            width: 100%;
+            height: 400px;
+            margin-top: -80px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar_logo">
+            <a href="homepage.html"><img class="logo" src="tesla_logo.png" width="80px" alt=""></a>
+        </div>
+        <div class="navbar_btn">
+            <div class="list">
+                <ul>
+                    <li><a class="home" href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="hero1_inside">
+            <div class="area_title">
+                <div class="title">
+                    <div class="title_2">
+                        <h1 class="tv_title">TESLA <h1 class="tv_title_2">CYBER TRUCK</h1>
+                        </h1>
+                    </div>
+                    <div class="tagline">
+                        <p class="tv_tagline">The Tesla Cybertruck is an upcoming battery electric light-duty truck
+                            announced by Tesla, Inc. in November 2019. Three models have been announced, with EPA range
+                            estimates of 250–500 miles (400–800 km) and an estimated 0–60 mph (0–97 km/h) time of
+                            2.9–6.5 seconds, depending on the model</p>
+                        <button class="btn_me" onclick="window.location.href='homepage.html'">Learn More</button>
+                        <button class="btn_portofolio" onclick="window.location.href='homepage.html'">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="area_pp">
+                <div class="pp">
+                    <img class="ppnya" src="2021-Tesla-Cybertruck.webp" alt="" width="700px">
+                    <h1 class="tv_pp">CYBERTRUCK</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container_sosmed">
+
+        <div class="panel_logo_sosmed">
+            <a href="https://github.com/RespawnHood" target="_blank"><img
+                    src="https://images.freeimages.com/vme/images/2/9/295767/white_clarity_shutdown_icon_preview"
+                    height="50px" alt=""></a>
+        </div>
+    </div>
+
+    <div class="hero2">
+        <h1 class="tv_skills">PERFORMANCE</h1>
+        <div class="hero2_inside">
+
+            <div class="skills_div">
+                <div class="div_cd">
+                    <div class="div_code">
+                        <h1 class="title_gd">CYBER TRUCK</h1>
+                    </div>
+                    <div class="div_item_skills_code">
+
+                        <div class="html">
+                            <img style=" padding-bottom: 15px;"
+                                src="https://cdn-icons-png.flaticon.com/512/7616/7616086.png" width="80px" alt="">
+                            <div class="persen_html">
+                            </div>
+                        </div>
+
+                        <div class="css">
+                            <img style="padding-bottom: 15px; margin-top: px;"
+                                src="https://static.thenounproject.com/png/2952930-200.png" width="80px" alt="">
+                            <div class="persen_css">
+                            </div>
+                        </div>
+
+                        <div class="kotlin">
+                            <img style="margin-left: -5px; padding-bottom: 6px; margin-top: -3px;"
+                                src="https://icon-library.com/images/battery-icon-png/battery-icon-png-13.jpg"
+                                width="90px" alt="">
+                            <div class="persen_kotlin">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero3">
+        <div class="gradient">
+
+        </div>
+        <h1 class="title_project">ORDER NOW</h1>
+        <div class="panel_project">
+            <div class="div_project">
+                <div class="container_project">
+                    <div class="project">
+                        <a href=""><img class="img_project" src="https://www.tesla.com/xNVh4yUEc3B9/03_Desktop.jpg"
+                                width="100%" alt=""></a>
+                    </div>
+                </div>
+                <div class="container_project">
+                    <div class="project">
+                        <a href=""><img class="img_project" src="https://www.tesla.com/xNVh4yUEc3B9/02_Desktop.jpg"
+                                width="100%" alt=""></a>
+                    </div>
+                </div>
+                <div class="container_project">
+                    <div class="project">
+                        <a href=""><img class="img_project" src="https://www.tesla.com/xNVh4yUEc3B9/04_Desktop.jpg"
+                                width="100%" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="big_img">
+                <img src="https://www.tesla.com/xNVh4yUEc3B9/08_Desktop.jpg" width="100%" alt="">
+            </div>
+        </div>
+        <div style="margin-top: 200px;width: 100%; height: 100px; display: flex; justify-content: center; align-items: center; color: rgba(255, 255, 255, 0.644); font-weight: 300; font-size: smaller;"
+            class="footer">
+            <P style="margin: 10px;">Tesla © 2023</P>
+            <P style="margin: 10px;">Privacy & Legal</P>
+            <P style="margin: 10px;">Vehicle Relcalls</P>
+            <P style="margin: 10px;">News</P>
+            <P style="margin: 10px;">Get Update</P>
+
+        </div>
+    </div>
+</body>
+
+</html>

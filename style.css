@@ -198,10 +198,10 @@ li a:hover {
 }
 
 .title-about {
-    margin-top: 50px;
+    margin-top: 150px;
     font-size: 2em;
     font-weight: 500;
-    padding-right: 130px;
+    padding-right: 50px;
     color: #1c1c20;
 }
 
@@ -220,7 +220,7 @@ li a:hover {
 .desc-about {
     font-size: 1.1em;
     margin-top: 35px;
-    padding-right: 200px;
+    padding-right: 125px;
     color: #1c1c20;
 }
 
@@ -235,14 +235,11 @@ li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 100px;
     width: 250px;
     height: 250px;
-    border-radius: 500px;
-    color: #ffff;
     background: #1c1c20;
-    font-size: larger;
-    font-weight: 400;
+    border-radius: 500px;
     transition: all 0.5s ease;
     -webkit-border-radius: 500px;
     -moz-border-radius: 500px;
@@ -254,8 +251,15 @@ li a:hover {
     -o-transition: all 0.5s ease;
 }
 
+.legacy-circle p {
+    color: #ffff;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
 .legacy-circle:hover {
     background: #465CE2;
+    scale: 1.2;
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -283,6 +287,12 @@ li a:hover {
 
 
 /* about end */
+
+/* skill start */
+.skill {
+
+}
+/* skill end */
 
 @media screen and (max-width:768px) {
 
@@ -371,7 +381,7 @@ li a:hover {
     }
 
     .img-legacy {
-        margin-top: 100px;
+        margin-top: 75px;
         padding-right: 100px;
         margin-left: 80px;
     }

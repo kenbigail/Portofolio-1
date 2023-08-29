@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="homestyle.css">
+    <!-- script JS -->
+    <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/3efb5b8a36.js" crossorigin="anonymous"></script>
-    <title>KenBigail</title>
-
     <!-- LogoIcon -->
     <link rel="shortcut icon" href="Assets/Ken's Logo - black.png" \type="image/x-icon">
-
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +26,9 @@
 
     <!-- AOS CDN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Keenan Abigail</title>
+
 </head>
 
 <body>
@@ -36,79 +39,179 @@
     </div>
     <!-- todo Hello -->
 
-
+    <!-- todo Navbar -->
+    <div class="navbar">
+        <div class="navbar-item">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- todo Navbar -->
 
     <!-- todo Hero -->
     <div class="hero">
-
-        <!-- todo Navbar -->
-        <div class="navbar">
-            <div class="navbar-item">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                </ul>
-            </div>
+        <div class="image">
+            <img src="Assets/img-ken.png" alt="image hero">
+            <h2 class="text-img">SOFTWARE <br>ENGINEER</h2>
         </div>
-        <!-- todo Navbar -->
-
-        <div class="text-hero">
-            <div class="intro">
-                <p>Hello, I'm</p>
-            </div>
-            <div class="name1">
-                <p>KEENAN</p>
-            </div>
-            <div class="name2">
-                <p>ABIGAIL</p>
-            </div>
-            <div class="location">
-                <h2>
-                    📍
-                </h2>
-                <p>Galaxy, South Bekasi</p>
-            </div>
-            <div class="sub-text">
-                <p>I’m Currently at IDN Boarding School, where i learn to Program and code you 👻</p>
-            </div>
+        <div class="title">
+            <p>KEENAN ABIGAIL</p>
+        </div>
+        <div class="school">
+            <p>Student at IDN Boarding School Jonggol</p>
+        </div>
+        <div class="desc-hero">
+            <p>Pendekar Software Team Leader. Focusing on Software Engineering, Developing, UI Design and Data Analyzing
+                🧑‍💻.</p>
         </div>
     </div>
     <!-- todo Hero -->
 
-    <!-- todo spacing -->
-    <div class="space"></div>
-    <!-- todo spacing -->
-
     <!-- todo About -->
-    <div class="about">
-        <div class="text-about">
-            <div class="title-about">
-                <p>Design and Developing Public Problems Routinely.</p>
-            </div>
-            <div class="stripe"></div>
-            <div class="desc-about">
-                <p>Keenan Abigail is a Vocational High Schooler and is only 15 Years old, but he manages and uses his
-                    time to solve Public Problems and eventually became useful to others.</p>
-            </div>
-            <div class="mini-text">
-                <p>Always exploring...</p>
-            </div>
-            <div class="legacy-circle">
-                <p>Ken's Legacy</p>
-            </div>
+    <div class="about" id="about">
+        <div class="vision-area">
+            <p class="ken-vision">Helping citizens solve Public and Worldwide Problems digitally and technologically.
+                Together we will make the World a better place for Humans.
+            </p>
         </div>
-        <div class="img-legacy">
-            <img src="Assets/Legacy img.png" alt="img-legacy">
+        <div class="tv-about">
+            <div class="text-about">
+                <p>The combination of my passion for design, code & interaction positions me in a unique place in the
+                    Engineering world.</p>
+            </div>
+            <div class="button-about">
+                <a href="about.html" class="btn-about">About Ken</a>
+            </div>
+
         </div>
     </div>
     <!-- todo About -->
 
+    <!-- todo Skills -->
+    <div class="title-skill">
+        <div class="skill-title">
+            <p>I can help you with...</p>
+        </div>
+    </div>
+    <div class="skill">
+        <div class="development">
+            <div class="number">
+                <p>01</p>
+            </div>
+            <div class="stripe"></div>
+            <div class="title-dev">
+                <p>Development</p>
+            </div>
+            <div class="desc-dev">
+                <p>I build useful Applications from scratch that fit seamlessly with my Client
+                    Designs. My focus is on How useful the Application is to Citizens around the World. I use
+                    Kotlin and Swift.</p>
+            </div>
+        </div>
+        <div class="design">
+            <div class="number">
+                <p>02</p>
+            </div>
+            <div class="stripe"></div>
+            <div class="title-design">
+                <p>Design</p>
+            </div>
+            <div class="desc-design">
+                <p>With a solid track record in designing websites and apps, I deliver strong and user-friendly digital
+                    designs. Because the foundation of any successful brands are solid brandings.</p>
+            </div>
+        </div>
+        <div class="engineer">
+            <div class="number">
+                <p>03</p>
+            </div>
+            <div class="stripe"></div>
+            <div class="title-engineer">
+                <p>Engineering</p>
+            </div>
+            <div class="desc-engineer">
+                <p>I am starting to learn the basics of Network Engineering and Software Engineering with my Father as a
+                    Mentor,
+                    hopefully this can be useful for the Future of Technology.</p>
+            </div>
+        </div>
+    </div>
+    <!-- todo Skills -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
-        integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="index.js"></script>
+    <!-- todo Projects -->
+    <div class="project" id="projects">
+        <div class="card-tomodoro">
+            <div class="text-tomodoro">
+                <div class="logo-tomodoro">
+                    <img src="Assets/Icon-Tomodoro.png" alt="tomodoro icon">
+                </div>
+                <div class="title-tomodoro">
+                    <p>Tomodoro</p>
+                </div>
+                <div class="type-year">
+                    <p>Team Leader · 2023</p>
+                </div>
+                <div class="desc-tomodoro">
+                    <p>Tomodoro is an App created based on Students Problems to Manage Time and Productivity.</p>
+                </div>
+                <div class="button-tomodoro">
+                    <a href="#" class="btn-tomodoro">About Tomodoro</a>
+                </div>
+            </div>
+            <div class="img-tomodoro">
+                <img src="Assets/tomodoro-preview.png" alt="app image">
+            </div>
+        </div>
+
+        <div class="card-taqwa">
+            <div class="text-taqwa">
+                <div class="logo-taqwa">
+                    <img src="Assets/icon-taqwa.png" alt="tomodoro icon">
+                </div>
+                <div class="title-taqwa">
+                    <p>TaqwaPro</p>
+                </div>
+                <div class="type-year">
+                    <p>Development · 2022</p>
+                </div>
+                <div class="desc-taqwa">
+                    <p>TaqwaPro is an App created based on the needs of Digital Muslim Communities.</p>
+                </div>
+                <div class="button-taqwa">
+                    <a href="" class="btn-taqwa">Case isn't Available yet.</a>
+                </div>
+            </div>
+            <div class="img-tomodoro">
+                <img src="Assets/taqwa-preview.png" alt="app image">
+            </div>
+        </div>
+
+    </div>
+    <!-- todo Projects -->
+
+    <!-- todo Footer -->
+    <div class="footer">
+        <div class="socials">
+            <h2>
+                <a target="_blank" href="https://instagram.com/kabigails_"><i class="fa-brands fa-instagram"
+                        style="margin-right: 5px; color: white;"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/keenan-abigail-679440233/"><i
+                        class="fa-brands fa-linkedin" style="margin-right: 5px; color: white;"></i></a>
+                <a target="_blank" href="https://github.com/kenbigail"><i class="fa-brands fa-github"
+                        style="margin-right: 5px; color: white;"></i></a>
+            </h2>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023 Keenan Abigail. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- todo Footer -->
+
+
 </body>
 
 </html>
