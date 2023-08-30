@@ -1,0 +1,947 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk';
+}
+
+/* Hello Start */
+.span-hello-container {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    z-index: 300;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f0e0e;
+}
+
+.span-hello {
+    font-size: 4rem;
+    color: #fff;
+}
+
+.span-hello-container {
+    transform: translatey(0);
+    transition: all 1s ease-in-out;
+}
+
+.hello-dot-span {
+    margin-right: 10px;
+}
+
+.translate-animation {
+    transform: translatey(-1000px);
+}
+
+/* Hello End */
+
+/* Navbar start */
+
+.navbar {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    margin: 25px;
+    font-weight: 400;
+}
+
+li a {
+    text-decoration: none;
+    color: #87878a;
+    transition: 0.3s ease;
+
+}
+
+li a:hover {
+    transition: 0.3s ease;
+    color: black;
+    box-shadow: black 0 3px;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+/* Navbar End */
+
+/* Hero Start */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 90vh;
+    background: #f6f6f6;
+}
+
+.image img {
+    width: 300px;
+    margin-top: 10px;
+    border-radius: 12px;
+    border: #1c1c20 3px solid;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.text-img {
+    font-family: 'Poppins', sans-serif;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0);
+    font-size: 60px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0);
+    margin-top: -200px;
+    margin-left: 0px;
+    transition: color 0.3s ease, margin-left 0.3s ease, text-shadow 0.3s ease, -webkit-text-stroke 0.3s ease;
+}
+
+.text-img:hover {
+    -webkit-text-stroke: 2px #1c1c20;
+    color: white;
+    margin-left: 200px;
+    text-shadow: 0px 0px 30px #87878a;
+}
+
+.title {
+    margin-top: 65px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 4.2em;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.title:hover {
+    letter-spacing: 5px;
+}
+
+.school {
+    margin-top: 5px;
+    color: #87878a;
+    font-weight: 100;
+    font-size: 2em;
+}
+
+.desc-hero {
+    margin-top: 50px;
+    color: #1c1c20;
+    padding: 0 635px;
+}
+
+.desc-hero p {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero End */
+
+/* About Start */
+.about {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+}
+
+.vision-area {
+    width: 50%;
+    text-align: left;
+}
+
+.ken-vision {
+    font-size: 2.5em;
+    padding: 150px 0;
+    padding-left: 165px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tv-about {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-about {
+    padding-top: 155px;
+    padding-right: 400px;
+    padding-left: 185px;
+    margin-left: -1px;
+}
+
+.text-about p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.button-about {
+    margin-top: 50px;
+    margin-left: 400px;
+
+}
+
+.btn-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+    background: #1c1c20;
+    border-radius: 500px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    -ms-border-radius: 500px;
+    -o-border-radius: 500px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.btn-about:hover {
+    background: #465CE2;
+    scale: 1.2;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+/* About End */
+
+/* Skill Start */
+.title-skill {
+    margin-top: 200px;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+}
+
+.skill-title {
+    font-size: 3em;
+    margin-left: 160px;
+    color: #1c1c20;
+
+}
+
+.skill {
+    width: 100vw;
+    height: 50vh;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.development {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: auto;
+    color: #1c1c20;
+}
+
+.number p {
+    font-family: 'Poppins', sans-serif;
+    color: #87878a;
+
+}
+
+.stripe {
+    margin-top: 25px;
+    width: 85%;
+    height: 0.5%;
+    background: #87878a;
+    opacity: 60%;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.title-dev p {
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.desc-dev p {
+    margin-top: 25px;
+    font-family: 'Poppins', sans-serif;
+
+    padding-right: 75px;
+    font-weight: 300;
+}
+
+.design {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: auto;
+    color: #1c1c20;
+}
+
+.number p {
+    font-family: 'Poppins', sans-serif;
+    color: #87878a;
+
+}
+
+.stripe {
+    margin-top: 25px;
+    width: 85%;
+    height: 0.5%;
+    background: #87878a;
+    opacity: 60%;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.title-design p {
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.desc-design p {
+    margin-top: 25px;
+    font-family: 'Poppins', sans-serif;
+
+    padding-right: 75px;
+    font-weight: 300;
+}
+
+.engineer {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: auto;
+    color: #1c1c20;
+}
+
+.number p {
+    font-family: 'Poppins', sans-serif;
+    color: #87878a;
+
+}
+
+.stripe {
+    margin-top: 25px;
+    width: 85%;
+    height: 0.5%;
+    background: #87878a;
+    opacity: 60%;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.title-engineer p {
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.desc-engineer p {
+    margin-top: 25px;
+    font-family: 'Poppins', sans-serif;
+    padding-right: 75px;
+    font-weight: 300;
+}
+
+/* Skill End */
+
+/* Project Start */
+.project {
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-tomodoro {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    height: 450px;
+    background: #FF8329;
+    border-radius: 30px;
+    box-shadow: #87878a 1000px;
+    transition: all 0.5s ease;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.card-tomodoro:hover {
+    scale: 1.05;
+    background: #FF9A51;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.text-tomodoro {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.logo-tomodoro img {
+    margin-top: 50px;
+    width: 10%;
+}
+
+.title-tomodoro {
+    color: #fff;
+    font-weight: 700;
+    font-size: 4em;
+    margin-top: 10px;
+}
+
+.title-tomodoro p {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.type-year {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.type-year p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.desc-tomodoro {
+    color: #fff;
+    padding-right: 35px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.desc-tomodoro p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.button-tomodoro {
+    margin-top: 50px;
+
+}
+
+.btn-tomodoro {
+    padding: 10px 30px;
+    background: #FF8329;
+    border: #ffffff 3px solid;
+    color: #ffffff;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.btn-tomodoro:hover {
+    background: #ffffff;
+    border: #ffffff 3px solid;
+    color: #FF8329;
+    transition: all 0.5s ease;
+
+}
+
+.img-tomodoro {
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.img-tomodoro img {
+    width: 80%;
+    padding-top: 210px;
+    padding-left: 30px;
+}
+
+.card-taqwa {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    height: 450px;
+    background: #04103A;
+    border-radius: 30px;
+    box-shadow: #87878a 10px;
+    margin-top: 50px;
+    transition: all 0.5s ease;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.card-taqwa:hover {
+    scale: 1.05;
+    background: #0F215F;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.text-taqwa {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.logo-taqwa img {
+    margin-top: 50px;
+    width: 10%;
+}
+
+.title-taqwa {
+    color: #fff;
+    font-weight: 700;
+    font-size: 4em;
+    margin-top: 10px;
+}
+
+.title-taqwa p {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.type-year {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.type-year p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.desc-taqwa {
+    color: #fff;
+    padding-right: 35px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.desc-taqwa p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.button-taqwa {
+    margin-top: 50px;
+
+}
+
+.btn-taqwa {
+    padding: 10px 30px;
+    background: #04103A;
+    border: #ffffff 3px solid;
+    color: #ffffff;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.btn-taqwa:hover {
+    background: #ffffff;
+    border: #ffffff 3px solid;
+    color: #04103A;
+    transition: all 0.5s ease;
+
+}
+
+.img-taqwa {
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.img-taqwa img {
+    width: 80%;
+    padding-top: 210px;
+    padding-left: 30px;
+}
+
+/* Project End */
+
+/* Footer Start*/
+.footer {
+    width: 100vw;
+    height: 15vh;
+    background: #1c1c20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    margin-top: 15px;
+    color: #ffffff;
+}
+
+/* Footer End */
+
+
+
+
+
+/* Responsive Mobile 768px */
+
+@media screen and (max-width: 768px) {
+
+    /* hello */
+    .span-hello {
+        font-size: 2rem;
+    }
+
+    /* hello */
+
+    /* Hero */
+    .image img {
+        width: 250px;
+        margin-top: 30px;
+    }
+
+    .text-img {
+        display: none;
+    }
+
+    .title {
+        margin-top: 0;
+        margin-top: 25px;
+        font-size: 2.7em;
+    }
+
+    .title:hover {
+        letter-spacing: 3px;
+    }
+
+    .school {
+        font-size: 1.5em;
+    }
+
+    .desc-hero {
+        margin-top: 0;
+        margin-top: 30px;
+        padding: 0;
+        padding: 0px 25px;
+    }
+
+    /* Hero */
+
+    /* about */
+    .about {
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+    }
+
+    .vision-area {
+        width: 100%;
+    }
+
+    .ken-vision {
+        padding: 0;
+        padding: 85px 30px;
+        font-size: 1.5em;
+    }
+
+    .tv-about {
+        width: 100%;
+    }
+
+    .text-about {
+        padding: 0;
+        padding-right: 150px;
+        margin-top: -30px;
+        margin-left: 30px;
+        font-size: 0.9em;
+    }
+
+    .button-about {
+        padding: 0;
+        margin: 0;
+        margin-left: 200px;
+    }
+
+    .btn-about {
+        width: 150px;
+        height: 150px;
+        font-size: 1em;
+    }
+
+    /* about */
+
+    /* skill */
+    .title-skill {
+        margin: 0;
+        height: 5vh;
+    }
+
+    .skill-title {
+        font-size: 1.8em;
+        margin: 0;
+        margin-left: 30px;
+    }
+
+    .skill {
+        height: 110vh;
+        margin: 0;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .development,
+    .design,
+    .engineer {
+        margin-left: 30px;
+        margin-bottom: 50px;
+    }
+
+    .stripe {
+        height: 1px;
+        width: 70%;
+    }
+
+    .title-dev p,
+    .title-design p,
+    .title-engineer p {
+        margin: 0;
+        margin-top: 15px;
+        font-size: 1.8em;
+    }
+
+    .desc-dev p,
+    .desc-design p,
+    .desc-engineer p {
+        margin: 0;
+        margin-top: 10px;
+        font-size: 0.9em;
+        padding: 0;
+        padding-right: 125px;
+    }
+
+
+    /* skill */
+
+    /* project */
+
+    .project {
+        height: 180vh;
+    }
+
+    .card-tomodoro {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 90%;
+        height: 39%;
+    }
+
+    .text-tomodoro {
+        width: 100%;
+        padding: 0;
+        padding-left: 20px;
+    }
+
+    .logo-tomodoro {
+        width: 95%;
+
+    }
+
+    .logo-tomodoro img {
+        margin: 0;
+        margin-top: 35px;
+    }
+
+    .title-tomodoro {
+        font-size: 3em;
+    }
+
+    .type-year {
+        font-size: 0.8em;
+    }
+
+    .desc-tomodoro {
+        font-size: 0.8em;
+    }
+
+    .button-tomodoro {
+        margin: 0;
+        margin-top: 35px;
+
+    }
+
+    .btn-tomodoro {
+        padding: 10px 30px;
+        background: #FF8329;
+        border: #ffffff 3px solid;
+        color: #ffffff;
+        border-radius: 12px;
+        text-decoration: none;
+        transition: all 0.5s ease;
+
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+    }
+
+    .btn-tomodoro:hover {
+        background: #ffffff;
+        border: #ffffff 3px solid;
+        color: #FF8329;
+        transition: all 0.5s ease;
+
+    }
+
+    .img-tomodoro {
+        width: 100%;
+    }
+
+    .img-tomodoro img {
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        padding: 0;
+        padding-top: 85px;
+        padding-left: 35px;
+    }
+
+    .card-taqwa {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 39%;
+    }
+
+    .text-taqwa {
+        width: 100%;
+        padding: 0;
+        padding-left: 20px;
+    }
+
+    .logo-taqwa {
+        width: 95%;
+
+    }
+
+    .logo-taqwa img {
+        margin: 0;
+        margin-top: 35px;
+    }
+
+    .title-taqwa {
+        font-size: 3em;
+    }
+
+    .type-year {
+        font-size: 0.8em;
+    }
+
+    .desc-taqwa {
+        font-size: 0.8em;
+    }
+
+    .button-taqwa {
+        margin: 0;
+        margin-top: 35px;
+
+    }
+
+    .btn-taqwa {
+        padding: 10px 30px;
+    }
+
+    .btn-taqwa:hover {
+        transition: all 0.5s ease;
+
+    }
+
+    .img-taqwa {
+        width: 100%;
+    }
+
+    .img-taqwa img {
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        padding: 0;
+        padding-top: 85px;
+        padding-left: 35px;
+    }
+
+    /* project */
+
+    /* footer */
+    .copyright p {
+        font-size: 0.8em;
+    }
+
+    /* footer */
+}

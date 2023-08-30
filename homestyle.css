@@ -35,6 +35,7 @@
 .translate-animation {
     transform: translatey(-1000px);
 }
+
 /* Hello End */
 
 /* Navbar start */
@@ -641,8 +642,9 @@ li a:hover {
     margin-top: 15px;
     color: #ffffff;
 }
+
 /* Footer End */
- 
+
 
 
 
@@ -655,6 +657,7 @@ li a:hover {
     .span-hello {
         font-size: 2rem;
     }
+
     /* hello */
 
     /* Hero */
@@ -791,6 +794,7 @@ li a:hover {
     .project {
         height: 180vh;
     }
+
     .card-tomodoro {
         display: flex;
         flex-direction: column;
@@ -934,9 +938,10 @@ li a:hover {
 
     /* project */
 
-/* footer */
-.copyright p {
-    font-size: 0.8em;
-}
-/* footer */
+    /* footer */
+    .copyright p {
+        font-size: 0.8em;
+    }
+
+    /* footer */
 }
