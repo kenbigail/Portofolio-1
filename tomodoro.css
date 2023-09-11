@@ -4,6 +4,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 /* hello start */
 .span-hello-container {
     z-index: 100;

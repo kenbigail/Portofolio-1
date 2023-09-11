@@ -1,6 +1,6 @@
 var active = 3;
 
-const hello_arr = ["Hello", "Hola", "Bonjour","Sup.",  "您好", "こんにちは ", "안녕하세요 ", "Ciao","Χαίρετε ", "مرحباً ", "Olá "];
+const hello_arr = ["Hello", "Hola", "Bonjour", "Sup.", "您好", "こんにちは ", "안녕하세요 ", "Ciao", "Χαίρετε ", "مرحباً ", "Olá "];
 
 
 window.onload = function () {
@@ -22,4 +22,39 @@ window.onload = function () {
     displayNextHello();
 };
 
-
+document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll("navbar-item a");
+  
+    links.forEach((link) => {
+      link.addEventListener("click", smoothScroll);
+    });
+  
+    function smoothScroll(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute("href");
+      const targetPosition = document.querySelector(targetId).offsetTop;
+      const startPosition = window.pageYOffset;
+      const distance = targetPosition - startPosition;
+      const duration = 1000; // Duration in milliseconds
+  
+      let start = null;
+      function step(timestamp) {
+        if (!start) start = timestamp;
+        const progress = timestamp - start;
+        window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+        if (progress < duration) {
+          requestAnimationFrame(step);
+        }
+      }
+  
+      requestAnimationFrame(step);
+    }
+  
+    function easeInOutCubic(t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return c / 2 * t * t * t + b;
+      t -= 2;
+      return c / 2 * (t * t * t + 2) + b;
+    }
+  });
+  
